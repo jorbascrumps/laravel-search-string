@@ -27,7 +27,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
             protected $table = 'models';
             protected $options = [];
 
-            public function __construct($options)
+            public function __construct($options = [])
             {
                 parent::__construct();
                 $this->options = $options;
